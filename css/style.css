@@ -56,6 +56,7 @@ header {
 ------------------*/
 main {
   display: flex;
+  color: white;
 }
 
 aside {
@@ -65,12 +66,52 @@ aside {
   overflow-y: auto;
   flex-shrink: 0;
 }
+.all {
+  padding: 0 50px;
+}
 
 .section-album {
   overflow-y: auto;
   background-color: #141922;
-  width: 100%;
+  width: calc(100% - 250px);
+  height: calc(100vh - 80px);
 }
+/* menu navigazione  */
+.section-album nav ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+.section-album li {
+  padding: 10px 30px;
+  list-style: none;
+}
+
+.section-album a {
+  color: #7d7f84;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* /menu navigazione  */
+
+.recently-played {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.box-album {
+  width: calc(100% / 6 - 15px);
+}
+
+.img-style {
+  width: 100%;
+  object-fit: contain;
+}
+
 /*----------------
       FOOTER
 ------------------*/
@@ -88,19 +129,59 @@ footer {
 /* screen da 0 a 600px - xs  */
 
 @media screen and (max-width: 600px) {
+  aside {
+    width: 50px;
+    height: calc(100vh - 80px);
+    background-color: black;
+    overflow-y: auto;
+    flex-shrink: 0;
+  }
+
+  .section-album {
+    overflow-y: auto;
+    background-color: #141922;
+    width: calc(100% - 50px);
+    height: calc(100vh - 80px);
+  }
+
+  .upgrade {
+    position: fixed;
+    display: flex;
+    height: 80px;
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .box-album {
+    width: calc(100% / 2 - 15px);
+  }
 }
 
 /* screen da 601 a 700px - s */
 
 @media screen and (min-width: 601px) and (max-width: 700px) {
+  .box-album {
+    width: calc(100% / 2 - 15px);
+  }
 }
 
 /* screen da 601 a 700px - md */
 
 @media screen and (min-width: 701px) and (max-width: 1099px) {
+  .box-album {
+    width: calc(100% / 4 - 15px);
+  }
 }
 
 /* screen da 1100 in poi - lg  */
 
 @media screen and (min-width: 1100px) {
+  .box-album {
+    width: calc(100% / 6 - 15px);
+  }
 }
