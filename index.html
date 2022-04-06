@@ -33,11 +33,58 @@
         <!-- corpo pagina  -->
         <main>
 
-
+            <!-- inizio aside  -->
             <aside>
+                <div class="container-nav-aside">
+                    <div class="box-logo">
+                        <img class="logo" src="img/logo-small.svg" alt=""><span class="titolo">Spotify</span>
+                    </div>
 
+                    <!-- !aggiungere bordo esterne sx home  -->
+                    <div class="box-nav">
+                        <img class="font-awesome" src="img/home.svg" alt="">
+                        <a href="#"><span class=".small">home</span></a>
+                    </div>
+                    <div class="box-nav">
+                        <img class="font-awesome" src="img/search.svg" alt="">
+                        <a href="#"><span class=".small">Cerca</span></a>
+                    </div>
+                    <div class="box-nav">
+                        <img class="font-awesome" src="img/libreria.svg" alt="">
+                        <a href="#"><span class=".small">la tua libreria</span></a>
+                    </div>
 
+                    <div class="playlist">
+                        <h3>Playlist</h3>
+                        <div class="create-playlist">
+                            <button><i class="fa-solid fa-plus"></i></button>
+                            <a href="#">Crea playlist</a>
+                        </div>
+                        <ul>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                    <div class="box-footer-aside">
+                        <div class="box-download">
+                            <img class="download" src="img/download.svg" alt="">
+                            <a href=""><span class="small">installa app</span></a>
+                        </div>
+                        <hr>
+                        <div class="box-profile">
+                            <img class="profile" src="img/profile.svg" alt=""><span class="titolo">Giuseppe</span>
+                        </div>
+
+                    </div>
+
+                </div>
             </aside>
+            <!-- /inizio aside  -->
 
             <!-- sezione album -->
             <div class="section-album">
@@ -55,11 +102,13 @@
                 </nav>
                 <!-- /menu navigazione  -->
 
-                <section class="all">
+                <div class="all">
+
+                    <!-- sezione Recently played  -->
                     <div class="tag-play">
                         <h2>Recently played</h2>
                     </div>
-
+                    <!-- !aggiungere hover alle immagini  -->
                     <section class="played">
 
                         <div class="box-album">
@@ -109,10 +158,11 @@
                                 <br>
                                 <span class="small">Orazio Saracino</span>
                             </div>
-
-
                         </div>
                     </section>
+                    <!-- /sezione Recently played  -->
+
+                    <!-- sezione creato per -->
                     <div class="tag-play">
                         <h2>Creato per Giuseppe Todisco</h2>
                         <h4 class="small">Più ascolti, più accurati saranno i suggerimenti</h4>
@@ -127,11 +177,11 @@
                         <div class="box-album">
                             <img class="img-style" src="img/mixdaily.jpeg" alt="">
                             <span class="titolo">daily Mix 1</span>
-
                         </div>
-
                     </section>
+                    <!-- /sezione creato per -->
 
+                    <!-- sezione Artisti piu popolari -->
                     <div class="tag-play">
                         <h2>Artisti più popolari</h2>
                         <h4 class="small">Più ascolti, più accurati saranno i suggerimenti</h4>
@@ -148,11 +198,9 @@
                             <span class="titolo">Single petal of a Rose</span>
 
                         </div>
-
                     </section>
-                </section>
-
-
+                    <!-- sezione Artisti piu popolari -->
+                </div>
             </div>
             <!-- /sezione album -->
 
