@@ -8,6 +8,27 @@
 }
 
 /*----------------
+      COMMON
+------------------*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------
+      BUTTON
+------------------*/
+.btn-upgrade {
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/*----------------
       TYPO
 ------------------*/
 
@@ -19,11 +40,15 @@ header {
 }
 .upgrade {
   position: fixed;
+  display: flex;
   height: 80px;
   width: calc(100% - 250px);
   margin-left: 250px;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 10;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
 
 /*----------------
