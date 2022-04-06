@@ -314,6 +314,17 @@ footer {
   .playlist {
     display: none;
   }
+  hr {
+    display: none;
+  }
+
+  .box-footer-aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 /* screen da 601 a 700px - s */
