@@ -154,13 +154,14 @@ aside {
   justify-content: flex-end;
 }
 .download {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 .box-download {
   display: flex;
   gap: 10px;
   padding-bottom: 10px;
+  align-items: center;
 }
 
 .box-profile {
@@ -255,6 +256,133 @@ footer {
   width: 100%;
   height: 80px;
   background-color: #282828;
+  color: white;
+}
+
+.container-footer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.player {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-playback,
+.option {
+  width: 30%;
+  display: flex;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.player {
+  width: 60%;
+}
+
+.player-btn {
+  display: flex;
+  align-items: center;
+}
+.player-btn i {
+  padding-left: 30px;
+}
+.small-player {
+  font-size: 18px;
+}
+.big-play {
+  font-size: 40px;
+}
+
+.option {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-img {
+  width: 70px;
+  height: 70px;
+}
+
+.album-playback img {
+  width: 70px;
+  object-fit: contain;
+}
+
+.album-playback i {
+  padding-left: 10px;
+  color: grey;
+}
+
+.favorite {
+  padding-left: 30px;
+}
+.favorite i:hover {
+  color: white;
+}
+.box-play-bar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-play-bar span {
+  padding: 0px 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.play-bar {
+  background-color: #5a5a5a;
+  width: 50%;
+  height: 5px;
+  border-radius: 30px;
+}
+
+.inside-play-bar {
+  display: flex;
+  background-color: white;
+  width: 30%;
+  height: 5px;
+  border-radius: 30px;
+}
+
+.inside-play-bar:hover {
+  background-color: greenyellow;
+}
+.inside-play-bar:hover::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  margin-left: 138px;
+  bottom: 14px;
+  background-color: greenyellow;
+}
+
+.option {
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.option .play-bar {
+  width: 30%;
+}
+
+.option .inside-play-bar::after {
+  display: none;
 }
 
 /*----------------
@@ -324,6 +452,13 @@ footer {
     height: 100%;
     justify-content: flex-end;
     align-items: center;
+  }
+  .box-download {
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+    justify-content: center;
+    padding-left: 5px;
   }
 }
 
