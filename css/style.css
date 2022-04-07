@@ -25,7 +25,11 @@ body {
   background-color: transparent;
   color: white;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
+}
+
+.btn-upgrade:hover {
+  font-size: 14px;
 }
 
 .create-playlist button {
@@ -164,6 +168,10 @@ aside {
   align-items: center;
 }
 
+.box-download a:hover {
+  color: white;
+}
+
 .box-profile {
   display: flex;
   padding-top: 10px;
@@ -232,8 +240,36 @@ a:hover {
   object-fit: contain;
 }
 
+.image {
+  position: relative;
+}
+
 .img-style-radius {
   border-radius: 50%;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image-overlay i {
+  font-size: 60px;
+}
+
+.image-overlay:hover {
+  opacity: 1;
 }
 
 .box-album span {
@@ -277,7 +313,7 @@ footer {
 
 .album-playback,
 .option {
-  width: 30%;
+  width: 20%;
   display: flex;
   height: 100%;
   gap: 10px;
@@ -285,7 +321,7 @@ footer {
 }
 
 .player {
-  width: 60%;
+  width: 80%;
 }
 
 .player-btn {
@@ -349,32 +385,38 @@ footer {
 }
 
 .inside-play-bar {
-  display: flex;
+  position: relative;
   background-color: white;
   width: 30%;
   height: 5px;
   border-radius: 30px;
 }
 
-.inside-play-bar:hover {
-  background-color: greenyellow;
+.circle-box:hover {
+  opacity: 1;
 }
-.inside-play-bar:hover::after {
+.circle-box {
+  width: 100%;
+  height: 100%;
+  background-color: greenyellow;
+  opacity: 0;
+}
+.circle {
   content: '';
   display: block;
   border-radius: 50%;
   width: 10px;
   height: 10px;
   position: absolute;
-  margin-left: 138px;
-  bottom: 14px;
+  right: 0px;
+  top: -2px;
   background-color: greenyellow;
 }
 
-.option {
+.icon {
   display: flex;
-  gap: 30px;
   font-size: 15px;
+  gap: 10px;
 }
 
 .option .play-bar {
@@ -438,6 +480,9 @@ footer {
   .container-nav-aside span {
     display: none;
   }
+  .box-footer-aside a {
+    display: none;
+  }
 
   .playlist {
     display: none;
@@ -458,7 +503,7 @@ footer {
     width: 100%;
     padding-bottom: 10px;
     justify-content: center;
-    padding-left: 5px;
+    padding-right: 2px;
   }
 }
 
